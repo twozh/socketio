@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="sioApp">
+<head>
+  <meta charset="utf-8">
+  <title>simple socketio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body ng-controller="sioCtrl">
+  <p>Status: {{ngmStatus}}</p>
+  Input:<input ng-model='ngmInput'>
+  <button ng-click="ngfClick()">Send</button>
+  <p>Output: {{ngmOutput}}</p>
+
+
+
+  <script src="javascripts/socket.io.js"></script>
+  <script src="javascripts/angular-1.2.2/angular.js"></script>
+  <script src="javascripts/an-controllers.js"></script>
+
+</body>
+</html>
